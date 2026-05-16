@@ -1,0 +1,6 @@
+ingreso = 180000;
+
+si ingreso >= 150000:
+tarifa = ingreso * 0.15;
+
+print(tarifa);

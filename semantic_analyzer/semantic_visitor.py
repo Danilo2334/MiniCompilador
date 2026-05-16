@@ -15,12 +15,12 @@ class SemanticVisitor(gramaticaVisitor):
 
     def visitAssignment(self, ctx):
         variable_name = ctx.ID().getText()
-        self.visit(ctx.expr())
+        self.visit(ctx.expression())
         self.symbol_table.declare(variable_name, "number")
 
     def visitAction(self, ctx):
         variable_name = ctx.ID().getText()
-        self.visit(ctx.expr())
+        self.visit(ctx.expression())
         self.symbol_table.declare(variable_name, "number")
 
     def visitPrintStmt(self, ctx):
@@ -31,11 +31,11 @@ class SemanticVisitor(gramaticaVisitor):
                 f"Error semántico: Variable '{variable_name}' no declarada."
             )
 
-    def visitRule(self, ctx):
-        self.visit(ctx.expr())
+    def visitRule_(self, ctx):
+        self.visit(ctx.condition())
         self.visit(ctx.action())
 
-    def visitExpr(self, ctx):
+    def visitExpression(self, ctx):
         ids = ctx.ID()
 
         if not isinstance(ids, list):

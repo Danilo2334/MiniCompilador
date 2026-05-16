@@ -1,0 +1,2 @@
+si ingreso > 100000
+impuesto = ingreso * 0.2;

@@ -1,0 +1,6 @@
+impuesto = 40000;
+descuento = 5000;
+
+total_pagar = impuesto - descuento;
+
+print(total_pagar);

@@ -1,0 +1,3 @@
+ingreso = 200000;
+
+si ingreso > 100000:

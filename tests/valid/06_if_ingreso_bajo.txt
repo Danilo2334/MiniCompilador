@@ -1,0 +1,6 @@
+ingreso = 80000;
+
+si ingreso < 100000:
+impuesto = ingreso * 0.05;
+
+print(impuesto);

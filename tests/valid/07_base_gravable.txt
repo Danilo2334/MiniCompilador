@@ -1,0 +1,6 @@
+ingreso = 500000;
+deduccion = 100000;
+
+base_gravable = ingreso - deduccion;
+
+print(base_gravable);

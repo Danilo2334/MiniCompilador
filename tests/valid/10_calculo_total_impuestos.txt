@@ -1,0 +1,7 @@
+ventas = 900000;
+iva = ventas * 0.19;
+retencion = ventas * 0.04;
+
+total_impuestos = iva + retencion;
+
+print(total_impuestos);

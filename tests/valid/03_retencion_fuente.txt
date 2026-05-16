@@ -1,0 +1,4 @@
+salario = 3000000;
+retencion = salario * 0.1;
+
+print(retencion);

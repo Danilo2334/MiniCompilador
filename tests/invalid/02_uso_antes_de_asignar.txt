@@ -1,0 +1,3 @@
+total = impuesto + 5000;
+
+print(total);

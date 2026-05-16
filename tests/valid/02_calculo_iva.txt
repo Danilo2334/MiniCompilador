@@ -1,0 +1,4 @@
+producto = 50000;
+iva = producto * 0.19;
+
+print(iva);
